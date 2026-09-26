@@ -91,16 +91,16 @@ st.write(
 )
 
 
+recipient = st.text_input(
+    "Recipient",
+    placeholder="e.g. Client, Hiring Manager, Professor"
+)
+
+
 purpose = st.text_area(
     "What is the purpose of this email?",
     placeholder="Describe what you want this email to achieve...",
     height=100
-)
-
-
-recipient = st.text_input(
-    "Recipient",
-    placeholder="e.g. Client, Hiring Manager, Professor"
 )
 
 
@@ -120,13 +120,6 @@ tone = st.selectbox(
     ]
 )
 
-
-context = st.text_area(
-    "Additional Context (Optional)",
-    placeholder="Add any additional information..."
-)
-
-
 length = st.selectbox(
     "Email Length",
     [
@@ -135,6 +128,14 @@ length = st.selectbox(
         "Detailed"
     ]
 )
+
+context = st.text_area(
+    "Additional Context (Optional)",
+    placeholder="Add any additional information..."
+)
+
+
+
 
 
 if st.button("✨ Generate Email", use_container_width=True):
