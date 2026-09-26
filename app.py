@@ -91,17 +91,10 @@ st.write(
 )
 
 
-purpose = st.selectbox(
-    "Email Purpose",
-    [
-        "Job Application",
-        "Follow-up",
-        "Client Proposal",
-        "Thank You",
-        "Meeting Request",
-        "Complaint",
-        "General"
-    ]
+purpose = st.text_area(
+    "What is the purpose of this email?",
+    placeholder="Describe what you want this email to achieve...",
+    height=100
 )
 
 
